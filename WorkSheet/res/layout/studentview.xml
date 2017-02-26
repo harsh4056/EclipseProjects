@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DCEDC8" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1" >
+
+        <TextView
+            android:id="@+id/cls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="36dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/cntr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="52dp"
+            android:layout_toLeftOf="@+id/cls"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:onClick="MATHLETICS"
+        android:text="MATHLETICS"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:onClick="sci"
+        android:text="SCI-FI"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:onClick="soc"
+        android:text="SOCIALITY"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:onClick="eng"
+        android:text="ENGLISH"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:onClick="other"
+        android:text="OTHERS"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:onClick="all"
+        android:text="ALL" />
+
+           <TextView
+               android:id="@+id/textpdh"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/button6"
+               android:layout_centerHorizontal="true"
+               android:onClick="date_pend_high_range"
+               android:text="Upper Limit"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textColor="#ffffff" />
+
+           <TextView
+               android:id="@+id/textpdl"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/textpdh"
+               android:layout_below="@+id/textpdh"
+               android:onClick="date_pend_low_range"
+               android:text="Lower Limit"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="#cfe96c">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="Student Name"
+            android:inputType="text"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/parent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="Mother/Father"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Batch"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/batch"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Class"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/cls"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Centre"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/centre"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/school"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="School details"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/date_of_join"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttonshape"
+            android:minHeight="30dip"
+            android:minWidth="90dip"
+            android:onClick="join_date"
+            android:text="Date Of Joining"
+            android:textColor="#303030" />
+
+        <TextView
+            android:id="@+id/date_1"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_weight="0.09"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:color="#ffffff" />
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="Preferred Comment"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/Prev_res"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="Previous Results"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/van"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="Van Select"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/admts"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_test"
+            android:ems="10"
+            android:hint="Admissiont Scores"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonshape2"
+            android:onClick="submit"
+            android:text="SUBMIT"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

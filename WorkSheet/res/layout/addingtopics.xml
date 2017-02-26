@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DCEDC8" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="CLASS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/cls"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="SUBJECT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/sub"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showTopics" >
+
+            <Button
+                android:id="@+id/show_curr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showTopics"
+                android:text="Show Current topics"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/add_curr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addToText"
+                android:text="Add Topics"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Add Topic...."
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/disp_topics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:longClickable="true"
+            android:text="Scalable"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submitToDb"
+            android:text="Submit Topics"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</ScrollView>

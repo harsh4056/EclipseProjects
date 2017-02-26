@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DCEDC8" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1056dp"
+        android:orientation="vertical" >
+
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="30dp"
+              android:text="CENTER"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/cent"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+             />
+       
+               <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="30dp"
+              android:text="CLASS"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#ffffff" 
+              />
+
+        <Spinner
+            android:id="@+id/cls"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+           />
+        
+    <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="30dp"
+              android:text="BATCH"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#ffffff"
+               />
+
+        <Spinner
+            android:id="@+id/batch"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+             />
+        
+             <Button
+              android:id="@+id/students"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:text="Show Students" 
+              android:textColor="#ffffff"/>
+      
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="30dp"
+              android:text="SUBJECT"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#ffffff" />
+        
+           <Spinner
+            android:id="@+id/sub"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+             />
+        
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="30dp"
+              android:text="Assign teacher"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#ffffff" />
+          <Spinner
+            android:id="@+id/fac"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+             />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="25dp"
+                 android:layout_marginTop="30dp"
+                 android:onClick="populate"
+                 android:text="Topic"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="#ffffff" />
+
+          <Spinner
+            android:id="@+id/topic"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff" 
+            />   
+  
+
+
+
+     
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="SELECT DATE"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textpdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:onClick="date_pend_high_range"
+            android:text="Upper Limit"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+         <Button
+             android:id="@+id/submit_cal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:text="Schedule Submission"
+             android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+   
+
+
+</ScrollView>
